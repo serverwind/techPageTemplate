@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.sidebar {
+  margin-left: 10px;
+}
+.sidebar header {
+  font-size: 2em;
+  margin: 5px 0 20px 0;
+}
+.sidebar a {
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=style.css.map */

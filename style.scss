@@ -1,0 +1,25 @@
+$medium: 1.2em;
+$large: 2em;
+
+html, body {
+	margin: 0;
+}
+
+body {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 20px;
+}
+
+.sidebar {
+	margin-left: 10px;
+
+	header {
+		font-size: $large;
+		margin: 5px 0 20px 0;
+	}
+
+	a {
+		font-size: $medium;
+	}
+}
