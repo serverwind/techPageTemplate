@@ -1,25 +1,98 @@
 $medium: 1.2em;
 $large: 2em;
 
+$white: #F9F9ED;
+$lightgray: #D9DBF1;
+$dark: #474647;
+$blue: #2D7DD2;
+$red: #F45D01;
+
 html, body {
 	margin: 0;
+	color: $dark;
+	font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
 	display: grid;
 	grid-template-columns: auto 1fr;
-	gap: 20px;
 }
 
 .sidebar {
-	margin-left: 10px;
+	background-color: $lightgray;
+	padding: 0 10px 0 10px;
+	height: 100%;
+	min-width: 260px;
+
+	.navWrapper {
+		position: fixed;
+	}
 
 	header {
 		font-size: $large;
-		margin: 5px 0 20px 0;
+		font-weight: lighter;
+		border-bottom: 2px solid $dark;
+		margin: 10px 0 20px 0;
 	}
 
 	a {
 		font-size: $medium;
+		color: $blue;
 	}
+
+	a:hover {
+		color: $dark;
+	}
+}
+
+main {
+	background-color: $white;
+	padding: 0 10px 40px 10px;
+
+	header {
+		font-size: $large;
+		font-weight: bold;
+		margin: 2em 0 20px 0;
+	}
+
+	code {
+		background-color: $red;
+		padding: 5px;
+		border-radius: 5px;
+		display: inline-block;
+		margin: 5px 0 5px 0;
+	}
+
+	a {
+		color: $blue;
+	}
+
+	a:hover {
+		color: $dark;
+	}
+}
+
+.footer {
+	background-color: $lightgray;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    grid-template-columns: unset;
+  }
+  .sidebar .navWrapper {
+  	position: relative;
+  	padding-bottom: 15px;
+  }
+  main header {
+  	margin-top: 1em;
+  }
+  .footer {
+  	position: relative;
+  }
 }
