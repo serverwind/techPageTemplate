@@ -2,4 +2,4 @@
 
 CSS Template of Technical Documentation Page for freeCodeCamp challenge.
 
-url: https://lestrangeqq.github.io/techPageTemplate/
+url: https://serverwind.github.io/techPageTemplate/
